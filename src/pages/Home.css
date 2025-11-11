@@ -1,0 +1,93 @@
+/* ===== HOME SECTION ===== */
+section {
+  background-color: #0f172a; /* Dark navy background */
+  color: #f1f5f9; /* Soft gray text */
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== PROFILE IMAGE ===== */
+section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 35px rgba(99, 102, 241, 0.8);
+}
+
+/* ===== MAIN HEADING ===== */
+section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+section h1 span {
+  color: #818cf8; /* Indigo accent */
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+/* ===== PARAGRAPH ===== */
+section p {
+  max-width: 600px;
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+section p span {
+  color: #818cf8;
+  font-weight: 500;
+}
+
+/* ===== BUTTON ===== */
+section a {
+  background-color: #6366f1;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+section a:hover {
+  background-color: #4f46e5;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  section {
+    padding: 80px 20px;
+  }
+
+  section h1 {
+    font-size: 2.2rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  section img {
+    width: 120px;
+    height: 120px;
+  }
+}

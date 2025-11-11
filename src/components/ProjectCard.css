@@ -1,0 +1,52 @@
+.project-card {
+  background-color: #1e293b; /* Tailwind's slate-800 */
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: #e5e7eb;
+  width: 280px;
+  margin: 15px;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4); /* indigo glow */
+  transform: translateY(-5px);
+}
+
+/* Title */
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #818cf8; /* Tailwind's indigo-400 */
+  margin-bottom: 8px;
+}
+
+/* Tech stack description */
+.project-tech {
+  color: #d1d5db; /* gray-300 */
+  margin-top: 4px;
+  font-size: 0.95rem;
+}
+
+/* GitHub link */
+.project-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #818cf8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: #a5b4fc; /* lighter indigo */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .project-card {
+    width: 90%;
+  }
+}

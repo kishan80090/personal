@@ -1,0 +1,49 @@
+.about-section {
+  position: relative;
+  background-image: url("../assets/black.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* text ko visible banane ke liye */
+  padding: 60px 20px;
+  /* min-height: 100vh; */
+  z-index: 1;
+}
+
+/* dark overlay for better text visibility */
+.about-section::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* thoda dark effect */
+  z-index: -1;
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.about-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #007bff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.about-link:hover {
+  background: #0056b3;
+}

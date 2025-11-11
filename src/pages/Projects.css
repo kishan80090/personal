@@ -1,0 +1,76 @@
+section {
+  background-color: #0f172a; /* dark navy background */
+  background-image: url("../assets/black2.png");
+  color: white;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #a5b4fc; /* light indigo text */
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* grid layout for projects */
+section .grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: single column */
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* for medium & large screens */
+@media (min-width: 640px) {
+  section .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* Project Card basic styling */
+.project-card {
+  background: black;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 450px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  background: rgb(43, 42, 42);
+  border-color: #6366f1;
+}
+
+/* Project title */
+.project-card h3 {
+  color:blue;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Project tech description */
+.project-card p {
+  color: white;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Project link button */
+.project-card a {
+  display: inline-block;
+  background-color: #6366f1;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #4f46e5;
+}

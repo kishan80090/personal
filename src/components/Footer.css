@@ -1,0 +1,15 @@
+.footer {
+  background-color: #0f172a; /* Tailwind's slate-900 */
+  color: #9ca3af; /* Tailwind's gray-400 */
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Optional hover glow effect */
+.footer:hover {
+  color: #c7d2fe; /* light indigo shade */
+  transition: color 0.3s ease;
+}

@@ -1,0 +1,60 @@
+/* Navbar Container */
+.navbar {
+  background-color: #0f172a; /* Tailwind's slate-900 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+/* Inner container for layout */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Text */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #818cf8; /* Tailwind's indigo-400 */
+  letter-spacing: 1px;
+}
+
+/* Link container */
+.navbar-links {
+  display: flex;
+  gap: 24px;
+}
+
+/* Each link */
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-link:hover {
+  color: #818cf8; /* indigo-400 */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+}
