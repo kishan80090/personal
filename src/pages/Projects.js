@@ -24,7 +24,7 @@ export default function Projects() {
       link: "https://resultshow-git-master-kishan80090s-projects.vercel.app/",
     },
     {
-      title: "Simple Web",
+      title: "Signup",
       tech: "HTML, CSS, React = Simple Website Home, Services, Pricing, Aboute, Contac",
       link: "https://naviteproject-3vxs7pqy7-kishan80090s-projects.vercel.app/",
     },
