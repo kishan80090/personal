@@ -30,7 +30,7 @@ export default function Projects() {
     },
     {
       title: "Simple Web Page",
-      tech: "HTML, CSS, React, Node, Express = Developed a React Native Signup Page with background video, integrated with Node.js + Express + MySQL for secure user authentication and smooth workflow",
+      tech: "HTML, CSS, React, Node, Express =Developed  a React Native Signup Page with background video, integrated with Node.js + Express + MySQL for secure user authentication and smooth workflow",
       link: "https://velvety-queijadas-9aac2a.netlify.app/",
     },
   ];
